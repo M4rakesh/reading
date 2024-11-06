@@ -26,8 +26,8 @@ with open("people_data.json","w",encoding='utf-8') as file:
 
 for person in people:
     if int(person["age"]) >= 18:
-        print(f"Vārds:{person["name"]},Vecums:{person["age"]},Pilseta{person["city"]}")
-        
+        print(f"Vārds:{person['name']},Vecums:{person['age']},Pilseta{person['city']}")
+for person in people:  
     if int(person["city"][0]) =="R":
         print(f"Pilsetas kura pirmais burts ir R:{people["city"]}")
 
